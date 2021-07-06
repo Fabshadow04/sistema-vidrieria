@@ -1,0 +1,11 @@
+.text-center {
+
+  /*IMPORTANTE*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 300px;
+}

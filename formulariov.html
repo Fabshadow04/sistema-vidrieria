@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario vendedor</title>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./cssf/reset.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+	<link rel="stylesheet" href="./cssf/main.css">
+
+
+<style>
+		body{background-color: #D7E0E6;padding: 0px;font-family: Arial;}
+		
+		#menu2{
+			background-color: #000;
+
+		}
+
+		#menu2 ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		#menu2 ul li{
+			display: inline-block;
+		}
+
+		#menu2 ul li a{
+			color: white;
+			display: block;
+			padding: 20px 20px;
+			text-decoration: none;
+		}
+
+		#menu2 ul li a:hover{
+			background-color: #9b9b9b;
+		}
+
+		.item-r{
+			float: right;
+		}
+	</style>
+
+
+
+		
+		
+
+
+
+
+</head>
+<body>
+
+<script type="text/javascript">
+  var falioValido = Number(prompt("Ingrese codigo de empleado"));
+  if (falioValido != 123456) {
+    alert("codigo de empleados invalido");
+
+    window.location="index.html";
+
+  }else{
+
+
+    alert("Bienvenido, ingresa los datos correspondientes");
+
+    
+
+  }
+  </script>
+
+
+
+
+
+<div id="menu2">
+		<ul>
+			<li><a href="index.html">Pagina principal</a></li>
+			
+		</ul>
+	</div>
+
+
+	
+	<div class="container">
+<div class="form__top"> <h2>Formulario <span>vendedor </span></h2> </div>
+	<form class="form__reg"method="POST" action="formulariov.php">
+		
+			<tr> <th>ID del pedido</th> <td> <input class="input" type="text" name="id" id="id"> </td></tr>
+                        <tr> <th>VENDEDOR</th> <td> <input class="input" type="text" name="vendedor" id="vendedor"> </td></tr>
+			<tr> <th>NOMBRE</th> <td> <input class="input" type="text" name="nombre" id="nombre"> </td></tr>
+			<tr> <th>PRODUCTO</th> <td> <input class="input" type="text" name="producto" id="producto"> </td></tr>
+			<tr> <th>MODELO</th> <td> <input class="input" type="text" name="modelo" id="modelo"> </td></tr>
+                        <tr> <th>CANTIDAD</th> <td> <input class="input" type="text" name="cantidad" id="cantidad"> </td></tr>
+                        <tr> <th>DIRECCION</th> <td> <input  class="input" type="text" name="direccion" id="direccion"> </td></tr>
+			<tr> <th>COMENTARIO</th> <td> <input class="input" type="text" name="comentario" id="comentario"> </td></tr>
+			
+<div class="btn__form">
+			
+	<tr><th> <input class="btn__submit" type="submit" name="" value="ENVIAR"> <br> <input class="btn__reset" type="reset" name="" value="LIMPIAR DATOS"></th></tr>
+		</div>
+	</form>
+
+</div>
+</body>
+</html>
